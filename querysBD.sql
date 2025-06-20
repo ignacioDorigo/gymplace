@@ -17,3 +17,10 @@ INSERT INTO usuarios (email, password, nombre, apellido, fecha_nacimiento, tipo_
 ('carlos.rossi@yahoo.com', 'C4rlos#2023', 'Carlos', 'Rossi', '1992-12-01', 'entrenador'),
 ('luciana.martinez@gmail.com', 'Luciana@123', 'Luciana', 'Martínez', '1998-07-20', 'cliente'),
 ('admin@gymplace.com', 'Admin*Secure1', 'Admin', 'Gymplace', '1980-01-01', 'cliente');
+
+CREATE TABLE `imagenesperfiles` (
+  `email` varchar(255) NOT NULL,
+  `imagen` LONGBLOB,
+  PRIMARY KEY (`email`),
+  CONSTRAINT `imagenesperfiles_ibfk_1` FOREIGN KEY (`email`) REFERENCES `usuarios` (`email`) ON DELETE CASCADE ON UPDATE CASCADE
+);

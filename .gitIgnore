@@ -1,4 +1,8 @@
+# Back
 gymplace-backend/.env
 gymplace-backend/node_modules/
-
 gymplace-backend/package-lock.json
+
+# Front 
+gymplace-front/node_modules/
+gymplace-front/package-lock.json

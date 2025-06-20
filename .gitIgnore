@@ -1,0 +1,4 @@
+gymplace-backend/.env
+gymplace-backend/node_modules/
+
+gymplace-backend/package-lock.json
